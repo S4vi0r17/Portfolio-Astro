@@ -59,29 +59,17 @@ const Navbar = () => {
         isScrollingUp || prevScrollPos <= 0
           ? "fixed top-0 #0c0a09 slide-down-enter"
           : "hidden"
-      } py-4 text-sm px-10 flex items-center w-full justify-between z-40 text-white backdrop-blur-sm ${
+      } py-4 text-sm px-10 flex items-center w-full justify-center z-40 text-white backdrop-blur-sm ${
         isScrollingUp || prevScrollPos <= 0 ? "slide-down-enter-active" : ""
       }`}
     >
-      <div className="flex flex-grow basis-0">
-        <a href="#">
-          <span className="sr-only">lilnait.dev Logo</span>
-          logo
-        </a>
-      </div>
-      <Links />
-      <div className="flex flex-grow justify-end basis-0">
-          LangButton
-      </div>
+      <Links /> 
       <div
         id="menu-backdrop"
         className={`
-      absolute bg-radial-gradient bg-[#893aeaa0] backdrop-blur-lg rounded
+      absolute bg-radial-gradient bg-[#bcdafba0] backdrop-blur-lg rounded
       translate-x-[var(--left)] translate-y-[var(--top)]
-      left-0 top-0
-      w-[var(--width)] h-[var(--height)]
-      transition-all duration-500
-      ease-in-out opacity-0 -z-10
+      left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-500 ease-in-out opacity-0 -z-10
     `}
       />
     </header>
