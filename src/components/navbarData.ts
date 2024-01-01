@@ -1,7 +1,7 @@
  export const sidebarLinks = [
   {
     title: "About Me",
-    route: "/",
+    route: "#about",
   },
   {
     title: "Projects",
