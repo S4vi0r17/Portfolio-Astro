@@ -4,19 +4,29 @@ import Card from "../components/Card.astro";
 import Navbar from "../components/navbar.tsx";
 import AboutMe from "../components/AboutMe.astro";
 import Knowledge from "../components/Knowledge.astro";
+import Country from "../components/Country.astro";
+import Image from "../components/Image.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
 
   <main>
-    <div class="max-w-[1300px] mx-auto mt-20">
+    <div class="mt-20">
       <div
-        class="row-span-2 col-span-2 fd:row-span-4 lg:row-span-2 lg:col-span-2 rounded-xl border-slate-400/10 p-4 bg-[#18111f8a] border-2 bg-radial-gradient-farthest"
-      >
+        class="rounded-xl border-slate-400/10 p-4 bg-[#18111f8a] border-2 bg-radial-gradient-farthest">
         <AboutMe />
       </div>
-      <Knowledge />
+      <div class="rounded-xl border-slate-400/10 p-4 bg-[#18111f8a] border-2 bg-radial-gradient-farthest">
+        <Image />
+      </div>
+      <div class="rounded-xl border-slate-400/10 p-4 bg-[#18111f8a] border-2 bg-radial-gradient-farthest">
+        <Knowledge />
+      </div>
+      <div class="rounded-xl border-slate-400/10 p-4 bg-[#18111f8a] border-2 bg-radial-gradient-farthest">
+        <Country />
+      </div>
+      
     </div>
     <svg
       class="astro-a"

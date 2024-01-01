@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import Links from "./Links";
 
@@ -55,22 +53,12 @@ const Navbar = () => {
   return (
     <header
       id="landing-header"
-      className={`${
-        isScrollingUp || prevScrollPos <= 0
-          ? "fixed top-0 #0c0a09 slide-down-enter"
-          : "hidden"
-      } py-4 text-sm px-10 flex items-center w-full justify-center z-40 text-white backdrop-blur-sm ${
-        isScrollingUp || prevScrollPos <= 0 ? "slide-down-enter-active" : ""
-      }`}
+      className={`${isScrollingUp || prevScrollPos <= 0 ? "fixed top-0 #0c0a09 slide-down-enter" : "hidden"} py-4 text-sm px-10 flex items-center w-full justify-center z-40 text-white backdrop-blur-sm ${isScrollingUp || prevScrollPos <= 0 ? "slide-down-enter-active" : ""}`}
     >
-      <Links /> 
+      <Links />
       <div
         id="menu-backdrop"
-        className={`
-      absolute bg-radial-gradient bg-[#bcdafba0] backdrop-blur-lg rounded
-      translate-x-[var(--left)] translate-y-[var(--top)]
-      left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-500 ease-in-out opacity-0 -z-10
-    `}
+        className={`absolute bg-radial-gradient bg-[#bcdafba0] backdrop-blur-lg rounded translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)] transition-all duration-500 ease-in-out opacity-0 -z-10`}
       />
     </header>
   );

@@ -5,11 +5,11 @@ const Links = () => {
   return (
     <nav className="hidden md:block">
       <ul className="flex [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 ">
-      {sidebarLinks.map(({ title, route }) => (
+        {sidebarLinks.map(({ title, route }) => (
           <li key={title}>
             <a href={route}>{title}</a>
           </li>
-        ))} 
+        ))}
       </ul>
     </nav>
   );
